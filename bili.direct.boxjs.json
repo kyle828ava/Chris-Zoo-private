@@ -1,0 +1,18 @@
+//⚠️StreamingSE自行替换为自己的B站策略组名称
+
+const message = {
+    action: "set_policy_state",
+    content: {["StreamingSE"]: "direct"}
+};
+$configuration.sendMessage(message).then(resolve => {
+    if (resolve.error) {
+        console.log(resolve.error);
+    }
+    if (resolve.ret) {
+        let output=JSON.stringify(resolve.ret);
+        //console.log(output);
+    }
+    $done();
+}, reject => {
+    $done();
+});
