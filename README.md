@@ -1,3 +1,3 @@
 # Chris-Zoo-private
 My private repository
-# 主要配置从墨鱼大佬处导入
+# 整合大神配置自用款
